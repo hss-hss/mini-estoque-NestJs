@@ -14,7 +14,7 @@ export class ProdutoController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.produtoService.buscarPorID(+id);
+    return this.produtoService.buscarPorId(+id);
   }
   
   @Post()
@@ -29,6 +29,6 @@ export class ProdutoController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.produtoService.deletar(+id);
+    return this.produtoService.remover(+id);
   }
 }
